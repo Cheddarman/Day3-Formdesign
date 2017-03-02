@@ -19,6 +19,7 @@ form {
 .column {
   min-width: 300px;
   max-width: 30%;
+  margin:20px;
 }
 
 ul {
@@ -65,8 +66,8 @@ input:focus, textarea:focus {
   border-color:#006c9c;
 }
 
-#talent,#country,#occupation {
-  color:white;
+select {
   background-color:#3da5db;
+  color: white;
   width:300px;
 }
