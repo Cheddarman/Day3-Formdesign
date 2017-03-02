@@ -8,8 +8,17 @@ html {
 
 body {
   background-color:#3da5db;
+}
+
+form {
   display:flex;
   flex-wrap:wrap;
+  justify-content: space-around;
+}
+
+.column {
+  min-width: 300px;
+  max-width: 30%;
 }
 
 ul {
@@ -22,15 +31,42 @@ label {
   font-size:13px;
   font-family:arial,sans-serif;
   color:#fff;
-  line-height: 20px;
+  display: block;
+  margin-bottom:5px;
 }
 
 li {
   margin:20px;
 }
 
+::-webkit-input-placeholder{
+  font-style:italic;
+  color:#006c9c; 
+  }
+
 input {
-  background-color:#3da5db;
-  border:solid 2px white;
+  height:35px;
 }
 
+textarea {
+  height:200px;
+}
+
+input, textarea {
+  background-color:#3da5db;
+  border:solid 2px white;
+  width:300px;
+  color:white;
+  padding:10px;
+  outline-style:none;
+}
+
+input:focus, textarea:focus {
+  border-color:#006c9c;
+}
+
+#talent,#country,#occupation {
+  color:white;
+  background-color:#3da5db;
+  width:300px;
+}
